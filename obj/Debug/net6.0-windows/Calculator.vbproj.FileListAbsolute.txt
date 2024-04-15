@@ -13,7 +13,6 @@ C:\Users\Apillanes\Desktop\VSStudio\February\Calculator\obj\Debug\net6.0-windows
 C:\Users\Apillanes\Desktop\VSStudio\February\Calculator\obj\Debug\net6.0-windows\Calculator.pdb
 C:\Users\Apillanes\Desktop\VSStudio\February\Calculator\obj\Debug\net6.0-windows\Calculator.genruntimeconfig.cache
 C:\Users\Apillanes\Desktop\VSStudio\February\Calculator\obj\Debug\net6.0-windows\ref\Calculator.dll
-C:\Users\Apillanes\Desktop\VSStudio\February\Calculator\obj\Debug\net6.0-windows\Calculator.Area.resources
 C:\Users\Apillanes\Desktop\VSStudio\February\Calculator\obj\Debug\net6.0-windows\Calculator.Calculator.resources
-C:\Users\Apillanes\Desktop\VSStudio\February\Calculator\obj\Debug\net6.0-windows\Calculator.Timeform.resources
 C:\Users\Apillanes\Desktop\VSStudio\February\Calculator\obj\Debug\net6.0-windows\Calculator.BMIForm.resources
+C:\Users\Apillanes\Desktop\VSStudio\February\Calculator\obj\Debug\net6.0-windows\Calculator.sourcelink.json

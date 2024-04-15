@@ -93,8 +93,12 @@
             Label3.Text = ""
         ElseIf Label3.Text = "/" Then
             txtResult.Text = Val(Label2.Text) / Val(txtResult.Text)
-            Label2.Text = ""
-            Label3.Text = ""
+            If txtResult.Text = "∞" Then
+                txtResult.Text = "Syntax Error"
+                Label2.Text = ""
+                Label3.Text = ""
+            End If
+
         ElseIf Label3.Text = "x" Then
             txtResult.Text = Val(Label2.Text) * Val(txtResult.Text)
             Label2.Text = ""
@@ -103,11 +107,6 @@
         End If
     End Sub
 
-    Private Sub AreaToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles AreaToolStripMenuItem.Click
-        Area.Show()
-
-        Hide()
-    End Sub
 
     Private Sub BMIToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles BMIToolStripMenuItem.Click
         BMIForm.Show()
@@ -115,9 +114,11 @@
         Me.Hide()
     End Sub
 
-    Private Sub TimeToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles TimeToolStripMenuItem.Click
-        Timeform.Show()
-
-        Me.Hide()
+    Private Sub txtResult_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtResult.KeyPress
+        Dim ch As Char = e.KeyChar
+        If Not Char.IsDigit(ch) Then
+            e.Handled = True
+        End If
     End Sub
+
 End Class

@@ -22,7 +22,6 @@ Partial Class BMIForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        txtResult = New TextBox()
         Button2 = New Button()
         Button1 = New Button()
         btnTwozero = New Button()
@@ -37,27 +36,23 @@ Partial Class BMIForm
         btnThree = New Button()
         btnTwo = New Button()
         btnOne = New Button()
-        Label3 = New Label()
-        Label2 = New Label()
         MenuStrip1 = New MenuStrip()
         MenuToolStripMenuItem = New ToolStripMenuItem()
-        AreaToolStripMenuItem = New ToolStripMenuItem()
-        BMIToolStripMenuItem = New ToolStripMenuItem()
+        StandardCalculatorToolStripMenuItem = New ToolStripMenuItem()
+        BMIToolStripMenuItem1 = New ToolStripMenuItem()
+        txtResult = New TextBox()
+        btnEqual = New Button()
+        Label5 = New Label()
+        Label1 = New Label()
+        lblHeight = New Label()
+        lblWeight = New Label()
+        Label2 = New Label()
+        BMI = New Label()
         TimeToolStripMenuItem = New ToolStripMenuItem()
-        HomeToolStripMenuItem = New ToolStripMenuItem()
+        BMIToolStripMenuItem = New ToolStripMenuItem()
+        AreaToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
-        ' 
-        ' txtResult
-        ' 
-        txtResult.Font = New Font("Segoe UI Emoji", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
-        txtResult.Location = New Point(26, 86)
-        txtResult.Multiline = True
-        txtResult.Name = "txtResult"
-        txtResult.ReadOnly = True
-        txtResult.Size = New Size(444, 52)
-        txtResult.TabIndex = 57
-        txtResult.TextAlign = HorizontalAlignment.Right
         ' 
         ' Button2
         ' 
@@ -65,7 +60,7 @@ Partial Class BMIForm
         Button2.Location = New Point(308, 197)
         Button2.Name = "Button2"
         Button2.Size = New Size(78, 46)
-        Button2.TabIndex = 56
+        Button2.TabIndex = 10
         Button2.Text = "C"
         Button2.UseVisualStyleBackColor = True
         ' 
@@ -75,7 +70,7 @@ Partial Class BMIForm
         Button1.Location = New Point(392, 197)
         Button1.Name = "Button1"
         Button1.Size = New Size(78, 46)
-        Button1.TabIndex = 55
+        Button1.TabIndex = 11
         Button1.Text = "CE"
         Button1.UseVisualStyleBackColor = True
         ' 
@@ -85,7 +80,7 @@ Partial Class BMIForm
         btnTwozero.Location = New Point(392, 249)
         btnTwozero.Name = "btnTwozero"
         btnTwozero.Size = New Size(78, 46)
-        btnTwozero.TabIndex = 52
+        btnTwozero.TabIndex = 13
         btnTwozero.Text = "00"
         btnTwozero.UseVisualStyleBackColor = True
         ' 
@@ -95,7 +90,7 @@ Partial Class BMIForm
         Button3.Location = New Point(308, 249)
         Button3.Name = "Button3"
         Button3.Size = New Size(78, 46)
-        Button3.TabIndex = 53
+        Button3.TabIndex = 12
         Button3.Text = "0"
         Button3.UseVisualStyleBackColor = True
         ' 
@@ -105,7 +100,7 @@ Partial Class BMIForm
         btnDot.Location = New Point(308, 301)
         btnDot.Name = "btnDot"
         btnDot.Size = New Size(78, 46)
-        btnDot.TabIndex = 54
+        btnDot.TabIndex = 14
         btnDot.Text = "."
         btnDot.UseVisualStyleBackColor = True
         ' 
@@ -115,7 +110,7 @@ Partial Class BMIForm
         btnNine.Location = New Point(194, 301)
         btnNine.Name = "btnNine"
         btnNine.Size = New Size(78, 46)
-        btnNine.TabIndex = 51
+        btnNine.TabIndex = 9
         btnNine.Text = "9"
         btnNine.UseVisualStyleBackColor = True
         ' 
@@ -125,7 +120,7 @@ Partial Class BMIForm
         btnEight.Location = New Point(110, 301)
         btnEight.Name = "btnEight"
         btnEight.Size = New Size(78, 46)
-        btnEight.TabIndex = 50
+        btnEight.TabIndex = 8
         btnEight.Text = "8"
         btnEight.UseVisualStyleBackColor = True
         ' 
@@ -135,7 +130,7 @@ Partial Class BMIForm
         btnSeven.Location = New Point(26, 301)
         btnSeven.Name = "btnSeven"
         btnSeven.Size = New Size(78, 46)
-        btnSeven.TabIndex = 49
+        btnSeven.TabIndex = 7
         btnSeven.Text = "7"
         btnSeven.UseVisualStyleBackColor = True
         ' 
@@ -145,7 +140,7 @@ Partial Class BMIForm
         btnSix.Location = New Point(194, 249)
         btnSix.Name = "btnSix"
         btnSix.Size = New Size(78, 46)
-        btnSix.TabIndex = 48
+        btnSix.TabIndex = 6
         btnSix.Text = "6"
         btnSix.UseVisualStyleBackColor = True
         ' 
@@ -155,7 +150,7 @@ Partial Class BMIForm
         btnFive.Location = New Point(110, 249)
         btnFive.Name = "btnFive"
         btnFive.Size = New Size(78, 46)
-        btnFive.TabIndex = 47
+        btnFive.TabIndex = 5
         btnFive.Text = "5"
         btnFive.UseVisualStyleBackColor = True
         ' 
@@ -165,7 +160,7 @@ Partial Class BMIForm
         btnFour.Location = New Point(26, 249)
         btnFour.Name = "btnFour"
         btnFour.Size = New Size(78, 46)
-        btnFour.TabIndex = 46
+        btnFour.TabIndex = 4
         btnFour.Text = "4"
         btnFour.UseVisualStyleBackColor = True
         ' 
@@ -175,7 +170,7 @@ Partial Class BMIForm
         btnThree.Location = New Point(194, 197)
         btnThree.Name = "btnThree"
         btnThree.Size = New Size(78, 46)
-        btnThree.TabIndex = 45
+        btnThree.TabIndex = 3
         btnThree.Text = "3"
         btnThree.UseVisualStyleBackColor = True
         ' 
@@ -185,7 +180,7 @@ Partial Class BMIForm
         btnTwo.Location = New Point(110, 197)
         btnTwo.Name = "btnTwo"
         btnTwo.Size = New Size(78, 46)
-        btnTwo.TabIndex = 44
+        btnTwo.TabIndex = 2
         btnTwo.Text = "2"
         btnTwo.UseVisualStyleBackColor = True
         ' 
@@ -195,56 +190,117 @@ Partial Class BMIForm
         btnOne.Location = New Point(26, 197)
         btnOne.Name = "btnOne"
         btnOne.Size = New Size(78, 46)
-        btnOne.TabIndex = 43
+        btnOne.TabIndex = 1
         btnOne.Text = "1"
         btnOne.UseVisualStyleBackColor = True
         ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.Location = New Point(476, 97)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(0, 21)
-        Label3.TabIndex = 41
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.Location = New Point(392, 55)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(0, 21)
-        Label2.TabIndex = 42
-        ' 
         ' MenuStrip1
         ' 
-        MenuStrip1.Items.AddRange(New ToolStripItem() {MenuToolStripMenuItem, HomeToolStripMenuItem})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {MenuToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Size = New Size(499, 29)
-        MenuStrip1.TabIndex = 58
+        MenuStrip1.TabIndex = 17
         MenuStrip1.Text = "MenuStrip1"
         ' 
         ' MenuToolStripMenuItem
         ' 
-        MenuToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AreaToolStripMenuItem, BMIToolStripMenuItem, TimeToolStripMenuItem})
+        MenuToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {StandardCalculatorToolStripMenuItem, BMIToolStripMenuItem1})
         MenuToolStripMenuItem.Font = New Font("Segoe UI Semilight", 12F, FontStyle.Regular, GraphicsUnit.Point)
         MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
         MenuToolStripMenuItem.Size = New Size(62, 25)
         MenuToolStripMenuItem.Text = "Menu"
         ' 
-        ' AreaToolStripMenuItem
+        ' StandardCalculatorToolStripMenuItem
         ' 
-        AreaToolStripMenuItem.Name = "AreaToolStripMenuItem"
-        AreaToolStripMenuItem.Size = New Size(113, 26)
-        AreaToolStripMenuItem.Text = "Area"
+        StandardCalculatorToolStripMenuItem.Name = "StandardCalculatorToolStripMenuItem"
+        StandardCalculatorToolStripMenuItem.Size = New Size(213, 26)
+        StandardCalculatorToolStripMenuItem.Text = "Standard Calculator"
         ' 
-        ' BMIToolStripMenuItem
+        ' BMIToolStripMenuItem1
         ' 
-        BMIToolStripMenuItem.Name = "BMIToolStripMenuItem"
-        BMIToolStripMenuItem.Size = New Size(113, 26)
-        BMIToolStripMenuItem.Text = "BMI "
+        BMIToolStripMenuItem1.Name = "BMIToolStripMenuItem1"
+        BMIToolStripMenuItem1.Size = New Size(213, 26)
+        BMIToolStripMenuItem1.Text = "BMI"
+        ' 
+        ' txtResult
+        ' 
+        txtResult.Font = New Font("Segoe UI Emoji", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        txtResult.ImeMode = ImeMode.NoControl
+        txtResult.Location = New Point(26, 90)
+        txtResult.Multiline = True
+        txtResult.Name = "txtResult"
+        txtResult.PlaceholderText = "Input"
+        txtResult.Size = New Size(162, 47)
+        txtResult.TabIndex = 16
+        txtResult.TextAlign = HorizontalAlignment.Right
+        ' 
+        ' btnEqual
+        ' 
+        btnEqual.Font = New Font("Segoe UI Emoji", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        btnEqual.Location = New Point(392, 301)
+        btnEqual.Name = "btnEqual"
+        btnEqual.Size = New Size(78, 46)
+        btnEqual.TabIndex = 15
+        btnEqual.Text = "="
+        btnEqual.UseVisualStyleBackColor = True
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label5.Location = New Point(242, 101)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(91, 18)
+        Label5.TabIndex = 62
+        Label5.Text = "Weight(Kg):"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Location = New Point(242, 60)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(92, 18)
+        Label1.TabIndex = 62
+        Label1.Text = "Height(CM):"
+        ' 
+        ' lblHeight
+        ' 
+        lblHeight.AutoSize = True
+        lblHeight.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblHeight.Location = New Point(348, 60)
+        lblHeight.Name = "lblHeight"
+        lblHeight.Size = New Size(0, 18)
+        lblHeight.TabIndex = 62
+        ' 
+        ' lblWeight
+        ' 
+        lblWeight.AutoSize = True
+        lblWeight.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblWeight.Location = New Point(348, 101)
+        lblWeight.Name = "lblWeight"
+        lblWeight.Size = New Size(0, 18)
+        lblWeight.TabIndex = 62
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.Location = New Point(242, 141)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(39, 18)
+        Label2.TabIndex = 62
+        Label2.Text = "BMI:"
+        ' 
+        ' BMI
+        ' 
+        BMI.AutoSize = True
+        BMI.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        BMI.Location = New Point(348, 141)
+        BMI.Name = "BMI"
+        BMI.Size = New Size(0, 18)
+        BMI.TabIndex = 62
         ' 
         ' TimeToolStripMenuItem
         ' 
@@ -252,17 +308,30 @@ Partial Class BMIForm
         TimeToolStripMenuItem.Size = New Size(113, 26)
         TimeToolStripMenuItem.Text = "Time"
         ' 
-        ' HomeToolStripMenuItem
+        ' BMIToolStripMenuItem
         ' 
-        HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        HomeToolStripMenuItem.Size = New Size(52, 25)
-        HomeToolStripMenuItem.Text = "Home"
+        BMIToolStripMenuItem.Name = "BMIToolStripMenuItem"
+        BMIToolStripMenuItem.Size = New Size(113, 26)
+        BMIToolStripMenuItem.Text = "BMI "
+        ' 
+        ' AreaToolStripMenuItem
+        ' 
+        AreaToolStripMenuItem.Name = "AreaToolStripMenuItem"
+        AreaToolStripMenuItem.Size = New Size(113, 26)
+        AreaToolStripMenuItem.Text = "Area"
         ' 
         ' BMIForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(499, 361)
+        Controls.Add(btnEqual)
+        Controls.Add(Label5)
+        Controls.Add(lblWeight)
+        Controls.Add(BMI)
+        Controls.Add(lblHeight)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
         Controls.Add(txtResult)
         Controls.Add(Button2)
         Controls.Add(Button1)
@@ -278,8 +347,6 @@ Partial Class BMIForm
         Controls.Add(btnThree)
         Controls.Add(btnTwo)
         Controls.Add(btnOne)
-        Controls.Add(Label3)
-        Controls.Add(Label2)
         Controls.Add(MenuStrip1)
         Name = "BMIForm"
         StartPosition = FormStartPosition.CenterScreen
@@ -289,8 +356,6 @@ Partial Class BMIForm
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents txtResult As TextBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents btnTwozero As Button
@@ -305,12 +370,19 @@ Partial Class BMIForm
     Friend WithEvents btnThree As Button
     Friend WithEvents btnTwo As Button
     Friend WithEvents btnOne As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AreaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BMIToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents txtResult As TextBox
+    Friend WithEvents btnEqual As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lblHeight As Label
+    Friend WithEvents lblWeight As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents BMI As Label
     Friend WithEvents TimeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BMIToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AreaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StandardCalculatorToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BMIToolStripMenuItem1 As ToolStripMenuItem
 End Class

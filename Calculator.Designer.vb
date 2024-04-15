@@ -46,9 +46,8 @@ Partial Class Calculator
         Label3 = New Label()
         MenuStrip1 = New MenuStrip()
         MenuToolStripMenuItem = New ToolStripMenuItem()
-        AreaToolStripMenuItem = New ToolStripMenuItem()
         BMIToolStripMenuItem = New ToolStripMenuItem()
-        TimeToolStripMenuItem = New ToolStripMenuItem()
+        StandardCalculatorToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -158,7 +157,7 @@ Partial Class Calculator
         btnAdd.Location = New Point(308, 131)
         btnAdd.Name = "btnAdd"
         btnAdd.Size = New Size(78, 46)
-        btnAdd.TabIndex = 11
+        btnAdd.TabIndex = 13
         btnAdd.Text = "+"
         btnAdd.UseVisualStyleBackColor = True
         ' 
@@ -168,7 +167,7 @@ Partial Class Calculator
         btnDiff.Location = New Point(392, 131)
         btnDiff.Name = "btnDiff"
         btnDiff.Size = New Size(78, 46)
-        btnDiff.TabIndex = 12
+        btnDiff.TabIndex = 14
         btnDiff.Text = "-"
         btnDiff.UseVisualStyleBackColor = True
         ' 
@@ -178,7 +177,7 @@ Partial Class Calculator
         btnMultiply.Location = New Point(392, 183)
         btnMultiply.Name = "btnMultiply"
         btnMultiply.Size = New Size(78, 46)
-        btnMultiply.TabIndex = 13
+        btnMultiply.TabIndex = 16
         btnMultiply.Text = "X"
         btnMultiply.UseVisualStyleBackColor = True
         ' 
@@ -188,7 +187,7 @@ Partial Class Calculator
         btnDivision.Location = New Point(308, 183)
         btnDivision.Name = "btnDivision"
         btnDivision.Size = New Size(78, 46)
-        btnDivision.TabIndex = 14
+        btnDivision.TabIndex = 15
         btnDivision.Text = "÷"
         btnDivision.UseVisualStyleBackColor = True
         ' 
@@ -198,7 +197,7 @@ Partial Class Calculator
         btnEqual.Location = New Point(308, 287)
         btnEqual.Name = "btnEqual"
         btnEqual.Size = New Size(162, 46)
-        btnEqual.TabIndex = 15
+        btnEqual.TabIndex = 19
         btnEqual.Text = "="
         btnEqual.UseVisualStyleBackColor = True
         ' 
@@ -208,9 +207,8 @@ Partial Class Calculator
         txtResult.Location = New Point(26, 59)
         txtResult.Multiline = True
         txtResult.Name = "txtResult"
-        txtResult.ReadOnly = True
         txtResult.Size = New Size(444, 52)
-        txtResult.TabIndex = 16
+        txtResult.TabIndex = 20
         txtResult.TextAlign = HorizontalAlignment.Right
         ' 
         ' Button1
@@ -219,7 +217,7 @@ Partial Class Calculator
         Button1.Location = New Point(392, 235)
         Button1.Name = "Button1"
         Button1.Size = New Size(78, 46)
-        Button1.TabIndex = 13
+        Button1.TabIndex = 18
         Button1.Text = "CE"
         Button1.UseVisualStyleBackColor = True
         ' 
@@ -229,7 +227,7 @@ Partial Class Calculator
         Button2.Location = New Point(308, 235)
         Button2.Name = "Button2"
         Button2.Size = New Size(78, 46)
-        Button2.TabIndex = 14
+        Button2.TabIndex = 17
         Button2.Text = "C"
         Button2.UseVisualStyleBackColor = True
         ' 
@@ -239,7 +237,7 @@ Partial Class Calculator
         Button3.Location = New Point(110, 287)
         Button3.Name = "Button3"
         Button3.Size = New Size(78, 46)
-        Button3.TabIndex = 10
+        Button3.TabIndex = 11
         Button3.Text = "0"
         Button3.UseVisualStyleBackColor = True
         ' 
@@ -249,7 +247,7 @@ Partial Class Calculator
         btnTwozero.Location = New Point(194, 287)
         btnTwozero.Name = "btnTwozero"
         btnTwozero.Size = New Size(78, 46)
-        btnTwozero.TabIndex = 10
+        btnTwozero.TabIndex = 12
         btnTwozero.Text = "00"
         btnTwozero.UseVisualStyleBackColor = True
         ' 
@@ -282,29 +280,23 @@ Partial Class Calculator
         ' 
         ' MenuToolStripMenuItem
         ' 
-        MenuToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AreaToolStripMenuItem, BMIToolStripMenuItem, TimeToolStripMenuItem})
+        MenuToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {StandardCalculatorToolStripMenuItem, BMIToolStripMenuItem})
         MenuToolStripMenuItem.Font = New Font("Segoe UI Semilight", 12F, FontStyle.Regular, GraphicsUnit.Point)
         MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
         MenuToolStripMenuItem.Size = New Size(62, 25)
         MenuToolStripMenuItem.Text = "Menu"
         ' 
-        ' AreaToolStripMenuItem
-        ' 
-        AreaToolStripMenuItem.Name = "AreaToolStripMenuItem"
-        AreaToolStripMenuItem.Size = New Size(180, 26)
-        AreaToolStripMenuItem.Text = "Area"
-        ' 
         ' BMIToolStripMenuItem
         ' 
         BMIToolStripMenuItem.Name = "BMIToolStripMenuItem"
-        BMIToolStripMenuItem.Size = New Size(180, 26)
+        BMIToolStripMenuItem.Size = New Size(213, 26)
         BMIToolStripMenuItem.Text = "BMI "
         ' 
-        ' TimeToolStripMenuItem
+        ' StandardCalculatorToolStripMenuItem
         ' 
-        TimeToolStripMenuItem.Name = "TimeToolStripMenuItem"
-        TimeToolStripMenuItem.Size = New Size(180, 26)
-        TimeToolStripMenuItem.Text = "Time"
+        StandardCalculatorToolStripMenuItem.Name = "StandardCalculatorToolStripMenuItem"
+        StandardCalculatorToolStripMenuItem.Size = New Size(213, 26)
+        StandardCalculatorToolStripMenuItem.Text = "Standard Calculator"
         ' 
         ' Calculator
         ' 
@@ -369,8 +361,7 @@ Partial Class Calculator
     Friend WithEvents Label3 As Label
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AreaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BMIToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TimeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StandardCalculatorToolStripMenuItem As ToolStripMenuItem
 
 End Class
