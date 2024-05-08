@@ -1,110 +1,158 @@
 ﻿Public Class Calculator
+
+    Public Function buttons(z As String)
+        txtResult.Text = txtResult.Text + z
+        Return z
+    End Function
+
+    Public Function operators(y As String)
+        Label2.Text = txtResult.Text
+        Label3.Text = y
+        txtResult.Text = ""
+        Return y
+    End Function
+
+    Public Function clear()
+        txtResult.Text = ""
+        Label3.Text = ""
+        Return ""
+    End Function
+
+    Public Function operation(add As String, diff As String, prod As String, div As String)
+        If Label3.Text = add Then
+            txtResult.Text = Val(Label2.Text) + Val(txtResult.Text)
+            Label2.Text = ""
+            Label3.Text = ""
+        ElseIf Label3.Text = diff Then
+            txtResult.Text = Val(Label2.Text) - Val(txtResult.Text)
+            Label2.Text = ""
+            Label3.Text = ""
+        ElseIf Label3.Text = prod Then
+            txtResult.Text = Val(Label2.Text) * Val(txtResult.Text)
+            Label2.Text = ""
+            Label3.Text = ""
+        ElseIf Label3.Text = div Then
+            txtResult.Text = Val(Label2.Text) / Val(txtResult.Text)
+            Label2.Text = ""
+            Label3.Text = ""
+        End If
+    End Function
+
     Private Sub btnOne_Click(sender As Object, e As EventArgs) Handles btnOne.Click
-        txtResult.Text = txtResult.Text + "1"
+        Dim one As String
+        one = "1"
+        buttons(one)
     End Sub
 
     Private Sub btnTwo_Click(sender As Object, e As EventArgs) Handles btnTwo.Click
-        txtResult.Text = txtResult.Text + "2"
+        Dim two As String
+        two = "2"
+        buttons(two)
     End Sub
 
     Private Sub btnThree_Click(sender As Object, e As EventArgs) Handles btnThree.Click
-        txtResult.Text = txtResult.Text + "3"
+        Dim three As String
+        three = "3"
+        buttons(three)
     End Sub
 
     Private Sub btnFour_Click(sender As Object, e As EventArgs) Handles btnFour.Click
-        txtResult.Text = txtResult.Text + "4"
+        Dim four As String
+        four = "4"
+        buttons(four)
     End Sub
 
     Private Sub btnFive_Click(sender As Object, e As EventArgs) Handles btnFive.Click
-        txtResult.Text = txtResult.Text + "5"
+        Dim five As String
+        five = "5"
+        buttons(five)
     End Sub
 
     Private Sub btnSix_Click(sender As Object, e As EventArgs) Handles btnSix.Click
-        txtResult.Text = txtResult.Text + "6"
+        Dim six As String
+        six = "6"
+        buttons(six)
     End Sub
 
     Private Sub btnSeven_Click(sender As Object, e As EventArgs) Handles btnSeven.Click
-        txtResult.Text = txtResult.Text + "7"
+        Dim seven As String
+        seven = "7"
+        buttons(seven)
     End Sub
 
     Private Sub btnEight_Click(sender As Object, e As EventArgs) Handles btnEight.Click
-        txtResult.Text = txtResult.Text + "8"
+        Dim eight As String
+        eight = "8"
+        buttons(eight)
     End Sub
 
     Private Sub btnNine_Click(sender As Object, e As EventArgs) Handles btnNine.Click
-        txtResult.Text = txtResult.Text + "9"
+        Dim nine As String
+        nine = "9"
+        buttons(nine)
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        txtResult.Text = txtResult.Text + "0"
+        Dim zero As String
+        zero = "0"
+        buttons(zero)
     End Sub
 
     Private Sub btnTwozero_Click(sender As Object, e As EventArgs) Handles btnTwozero.Click
-        txtResult.Text = txtResult.Text + "00"
+        Dim doubleZero As String
+        doubleZero = "00"
+        buttons(doubleZero)
     End Sub
 
     Private Sub btnDot_Click(sender As Object, e As EventArgs) Handles btnDot.Click
-        txtResult.Text = txtResult.Text + "."
+        Dim period As String
+        period = "."
+        buttons(period)
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        Label2.Text = txtResult.Text
-        Label3.Text = "+"
-        txtResult.Text = ""
+        Dim add As String
+        add = "+"
+        operators(add)
     End Sub
 
     Private Sub btnDiff_Click(sender As Object, e As EventArgs) Handles btnDiff.Click
-        Label2.Text = txtResult.Text
-        Label3.Text = "-"
-        txtResult.Text = ""
+        Dim diff As String
+        diff = "-"
+        operators(diff)
     End Sub
 
     Private Sub btnDivision_Click(sender As Object, e As EventArgs) Handles btnDivision.Click
-        Label2.Text = txtResult.Text
-        Label3.Text = "/"
-        txtResult.Text = ""
+        Dim division As String
+        division = "/"
+        operators(division)
     End Sub
 
     Private Sub btnMultiply_Click(sender As Object, e As EventArgs) Handles btnMultiply.Click
-        Label2.Text = txtResult.Text
-        Label3.Text = "x"
-        txtResult.Text = ""
+        Dim product As String
+        product = "x"
+        operators(product)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        txtResult.Text = ""
-        Label3.Text = ""
+        clear()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        txtResult.Text = ""
-        Label3.Text = ""
+        clear()
         Label2.Text = ""
     End Sub
 
     Private Sub btnEqual_Click(sender As Object, e As EventArgs) Handles btnEqual.Click
-        If Label3.Text = "+" Then
-            txtResult.Text = Val(Label2.Text) + Val(txtResult.Text)
-            Label2.Text = ""
-            Label3.Text = ""
-        ElseIf Label3.Text = "-" Then
-            txtResult.Text = Val(Label2.Text) - Val(txtResult.Text)
-            Label2.Text = ""
-            Label3.Text = ""
-        ElseIf Label3.Text = "/" Then
-            txtResult.Text = Val(Label2.Text) / Val(txtResult.Text)
-            If txtResult.Text = "∞" Then
-                txtResult.Text = "Syntax Error"
-                Label2.Text = ""
-                Label3.Text = ""
-            End If
+        Dim add, diff, div, prod As String
+        add = "+"
+        diff = "-"
+        prod = "*"
+        div = "/"
 
-        ElseIf Label3.Text = "x" Then
-            txtResult.Text = Val(Label2.Text) * Val(txtResult.Text)
-            Label2.Text = ""
-            Label3.Text = ""
+        operation(add, diff, prod, div)
 
-        End If
+
     End Sub
 
 

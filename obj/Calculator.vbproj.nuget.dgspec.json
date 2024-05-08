@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Apillanes\\Desktop\\VSStudio\\February\\Calculator\\Calculator.vbproj": {}
+    "C:\\Users\\Apillanes\\Desktop\\VSStudio\\May\\CalculatorNew\\Calculator.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Apillanes\\Desktop\\VSStudio\\February\\Calculator\\Calculator.vbproj": {
+    "C:\\Users\\Apillanes\\Desktop\\VSStudio\\May\\CalculatorNew\\Calculator.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Apillanes\\Desktop\\VSStudio\\February\\Calculator\\Calculator.vbproj",
+        "projectUniqueName": "C:\\Users\\Apillanes\\Desktop\\VSStudio\\May\\CalculatorNew\\Calculator.vbproj",
         "projectName": "Calculator",
-        "projectPath": "C:\\Users\\Apillanes\\Desktop\\VSStudio\\February\\Calculator\\Calculator.vbproj",
+        "projectPath": "C:\\Users\\Apillanes\\Desktop\\VSStudio\\May\\CalculatorNew\\Calculator.vbproj",
         "packagesPath": "C:\\Users\\Apillanes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Apillanes\\Desktop\\VSStudio\\February\\Calculator\\obj\\",
+        "outputPath": "C:\\Users\\Apillanes\\Desktop\\VSStudio\\May\\CalculatorNew\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,52 +1,79 @@
 ﻿Public Class BMIForm
-
+    Public Function buttons(z As String)
+        txtResult.Text = txtResult.Text + z
+        Return z
+    End Function
 
     Private Sub btnOne_Click(sender As Object, e As EventArgs) Handles btnOne.Click
-        txtResult.Text = txtResult.Text + "1"
+        Dim one As String
+        one = "1"
+        buttons(one)
     End Sub
 
     Private Sub btnTwo_Click(sender As Object, e As EventArgs) Handles btnTwo.Click
-        txtResult.Text = txtResult.Text + "2"
+        Dim two As String
+        two = "2"
+        buttons(two)
     End Sub
 
     Private Sub btnThree_Click(sender As Object, e As EventArgs) Handles btnThree.Click
-        txtResult.Text = txtResult.Text + "3"
+        Dim three As String
+        three = "3"
+        buttons(three)
     End Sub
 
     Private Sub btnFour_Click(sender As Object, e As EventArgs) Handles btnFour.Click
-        txtResult.Text = txtResult.Text + "4"
+        Dim four As String
+        four = "4"
+        buttons(four)
     End Sub
 
     Private Sub btnFive_Click(sender As Object, e As EventArgs) Handles btnFive.Click
-        txtResult.Text = txtResult.Text + "5"
+        Dim five As String
+        five = "5"
+        buttons(five)
     End Sub
 
     Private Sub btnSix_Click(sender As Object, e As EventArgs) Handles btnSix.Click
-        txtResult.Text = txtResult.Text + "6"
+        Dim six As String
+        six = "6"
+        buttons(six)
     End Sub
 
     Private Sub btnSeven_Click(sender As Object, e As EventArgs) Handles btnSeven.Click
-        txtResult.Text = txtResult.Text + "7"
+        Dim seven As String
+        seven = "7"
+        buttons(seven)
     End Sub
 
     Private Sub btnEight_Click(sender As Object, e As EventArgs) Handles btnEight.Click
-        txtResult.Text = txtResult.Text + "8"
+        Dim eight As String
+        eight = "8"
+        buttons(eight)
     End Sub
 
     Private Sub btnNine_Click(sender As Object, e As EventArgs) Handles btnNine.Click
-        txtResult.Text = txtResult.Text + "9"
+        Dim nine As String
+        nine = "9"
+        buttons(nine)
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        txtResult.Text = txtResult.Text + "0"
+        Dim zero As String
+        zero = "0"
+        buttons(zero)
     End Sub
 
     Private Sub btnTwozero_Click(sender As Object, e As EventArgs) Handles btnTwozero.Click
-        txtResult.Text = txtResult.Text + "00"
+        Dim doubleZero As String
+        doubleZero = "00"
+        buttons(doubleZero)
     End Sub
 
     Private Sub btnDot_Click(sender As Object, e As EventArgs) Handles btnDot.Click
-        txtResult.Text = txtResult.Text + "."
+        Dim period As String
+        period = "."
+        buttons(period)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
